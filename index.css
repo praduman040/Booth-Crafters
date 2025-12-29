@@ -1,0 +1,1099 @@
+body {
+      background: url("images/bg.jpg") no-repeat center center;
+      background: rgba(0, 0, 0, 51%);
+      background-size: cover;
+    }
+
+    /* .icon-box {
+        background-image: var(
+          --color-1,
+          linear-gradient(106deg, #caa315, #f0bd07)
+        );
+      } */
+
+    .navbar-brand img {
+      height: 60px;
+      width: auto;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(to right, #2563eb, #9333ea);
+      color: white;
+      border: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+    }
+
+    .text-shadow-lg {
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .text-shadow-md {
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+   /* Default (Desktop) */
+  .hero-title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 767px) {
+    .hero-overlay {
+      width: 90%;
+      left: 50%;
+      transform: translate(-50%, -40%); /* thoda upar */
+      padding: 0 10px;
+    }
+.fw-bold {
+    font-weight: 700 !important;
+    text-align: center;
+}
+.mb-4 {
+    margin-bottom: 1.4rem !important;
+    text-align: center;
+}
+    .hero-title {
+      font-size: 1.8rem;  /* mobile ke liye perfect size */
+    }
+
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-title {
+      font-size: 1.5rem; /* very small mobile */
+    }
+
+    .hero-subtitle {
+      font-size: 0.9rem;
+    }
+  }
+
+    .left-image-box img {
+      height: 92%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .icon-box {
+      background: linear-gradient(to right, #2563eb, #9333ea);
+      color: #000;
+      padding: 10px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    /* Now here css for water marking for navbar */
+    .navbar-scrolled {
+  background: rgba(255, 255, 255, 0.3); /* white transparent */
+  backdrop-filter: blur(10px); /* blur effect */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.navbar {
+  background: white;
+  transition: all 0.3s ease;
+}
+
+
+    /* Media Queries */
+    @media (max-width: 991.98px) {
+      .left-image-box {
+        margin-left: 0;
+        height: 300px;
+      }
+
+      .hero-section {
+        height: auto;
+        padding: 80px 0;
+      }
+
+      .navbar-nav {
+        gap: 0;
+      }
+
+      .text-shadow-lg {
+        text-shadow: none;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .left-image-box {
+        height: 250px;
+      }
+
+      h1.display-5 {
+        font-size: 2rem;
+      }
+
+      .btn-gradient {
+        padding: 10px 20px;
+      }
+    }
+
+    /* .icon-box {
+        background-image: var(
+          --color-1,
+          linear-gradient(106deg, #c59a00, #e9b90b)
+        );
+      } */
+
+    .navbar-nav .nav-link {
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #c59a00, #f5c209;
+      /* Change to your preferred hover color */
+    }
+
+    /* Optional: Add an underline animation */
+    .navbar-nav .nav-link {
+      position: relative;
+      transition: all 0.3s ease;
+      color: #000 !important;
+      /* default link color */
+    }
+
+    .navbar-nav .nav-link:hover {
+      background: linear-gradient(106deg, #c59a00 4.11%, #f7c307 92.13%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent !important;
+    }
+
+    /* Remove any underline animation */
+    .navbar-nav .nav-link::after {
+      content: none;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(106deg, #c59a00 4.11%, #f0bd05 92.13%);
+      color: #000;
+      border: none;
+      transition: opacity 0.3s ease;
+      font-weight: 600;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.9;
+    }
+
+    .gradient-text {
+      background: linear-gradient(106deg, #c59a00 4.11%, #f1be05 92.13%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .gradient-bg {
+      background: linear-gradient(106deg, #c59a00 4.11%, #ebc644 92.13%);
+    }
+
+    .card-img-top-container {
+      height: 256px;
+      overflow: hidden;
+    }
+
+    .card-img-top {
+      transition: transform 0.7s ease;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .card:hover .card-img-top {
+      transform: scale(1.1);
+    }
+
+    .img-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60%;
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+    }
+
+    .section-bg {
+      background: linear-gradient(to bottom, white, #f9fafb);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+
+    /* 4th section css */
+
+    body {
+      background-color: #7da8c9;
+    }
+
+    /* Section Heading */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(106deg, #c59a00 4.11%, #c59a00 4.11%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sub-title {
+      color: #666;
+      font-size: 1.1rem;
+    }
+
+    /* Project Card */
+    .project-card {
+      width: 420px;
+      height: 320px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      margin: auto;
+      position: relative;
+      background-color: #fff;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    /* Project Image */
+    .project-img {
+      border-radius: 16px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    /* Hover Effect */
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card:hover .project-img {
+      transform: scale(1.02);
+      filter: brightness(0.9);
+    }
+
+    /* Section Padding */
+    .project-section {
+      padding: 3px 0;
+    }
+
+    /* View Gallery Button */
+    .btn-view-gallery {
+      margin-top: 30px;
+      background: linear-gradient(106deg, #c59a00 4.11%, #c59a00 4.11%);
+      border: none;
+      color: #000;
+      font-weight: 600;
+      padding: 12px 30px;
+      border-radius: 50px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-view-gallery:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .project-card {
+        width: 100%;
+        height: auto;
+      }
+
+      .project-img {
+        height: auto;
+      }
+    }
+
+    /* === Sector 5: Impact Gradient and Blobs === */
+
+    /* Gradient Text Update */
+    .gradient-text {
+      background: linear-gradient(106deg, #c59a00 4.11%, #e4c34d 92.13%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Blob background using yellow/golden tones */
+    .bg-blobs {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(to bottom right, #fff9e6, #fcf7e3);
+      overflow: hidden;
+    }
+
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(100px);
+      mix-blend-mode: multiply;
+      opacity: 0.25;
+      animation: blob 20s infinite;
+    }
+
+    .blob:nth-child(1) {
+      width: 400px;
+      height: 400px;
+      background: #ffde7a;
+      /* golden-yellow */
+      top: -80px;
+      left: -80px;
+    }
+
+    .blob:nth-child(2) {
+      width: 400px;
+      height: 400px;
+      background: #ffde7a;
+      /* pale yellow */
+      top: -100px;
+      right: -80px;
+      animation-delay: 2s;
+    }
+
+    .blob:nth-child(3) {
+      width: 400px;
+      height: 400px;
+      background: #ffde7a;
+      /* soft yellow */
+      bottom: -80px;
+      left: 40%;
+      animation-delay: 4s;
+    }
+
+    @keyframes blob {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.2);
+      }
+    }
+
+    /* Now Here CSS 5th section */
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background: linear-gradient(to right, #c59a00, #c59a00);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .step-card:hover {
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+    }
+
+    .icon-circle {
+      background: linear-gradient(to right, #c59a00, #c59a00);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      padding: 1rem;
+      transition: transform 0.3s;
+    }
+
+    .step-card:hover .icon-circle {
+      transform: scale(1.1);
+    }
+
+    .step-number {
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      background: linear-gradient(to right, #c59a00, #c59a00);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    /* Now here coding 6th section */
+
+    :root {
+      --color-1: linear-gradient(106deg, #c59a00 4.11%, #c59a00 4.11%, );
+    }
+
+    .brand-logo {
+      width: 120px;
+      height: auto;
+      object-fit: contain;
+      max-height: 60px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      z-index: 1;
+    }
+
+    .brand-card {
+      width: 180px;
+      height: 100px;
+      position: relative;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      background-color: #fff;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .brand-card:hover .brand-logo {
+      transform: scale(1.1);
+      filter: grayscale(0%);
+    }
+
+    .brand-card:hover::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 1rem;
+      background: var(--color-1);
+      /* Using your golden gradient */
+      opacity: 0.3;
+      z-index: 0;
+    }
+
+    .scroll-wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .scroll-container {
+      display: flex;
+      gap: 3rem;
+      animation: marquee 30s linear infinite;
+      will-change: transform;
+    }
+
+    .marquee-duplicate {
+      display: flex;
+      gap: 3rem;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .gradient-overlay-left,
+    .gradient-overlay-right {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100px;
+      z-index: 5;
+      pointer-events: none;
+    }
+
+    .gradient-overlay-left {
+      left: 0;
+      background: linear-gradient(to right, #fff, transparent);
+    }
+
+    .gradient-overlay-right {
+      right: 0;
+      background: linear-gradient(to left, #fff, transparent);
+    }
+
+    /* 7th css */
+
+    /* Now here css secton 7 */
+
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .gradient-text {
+      background: linear-gradient(106deg, #c59a00 4.11%, #c59a00 4.11%, );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .marquee {
+      display: flex;
+      gap: 1.5rem;
+      animation: scrollMarquee 60s linear infinite;
+      width: max-content;
+    }
+
+    @keyframes scrollMarquee {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .marquee-item {
+      flex: 0 0 auto;
+      width: 320px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .star-rating i {
+      color: #ffc107;
+      /* Bootstrap warning/yellow */
+    }
+
+   
+
+    .gradient-text {
+      background: linear-gradient(106deg, #C59A00 4.11%, #c59a00 4.11%, );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    .bg-blobs {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .blob {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, #c59a00 0%, #c59a00 0%);
+      opacity: 0.4;
+      border-radius: 50%;
+      animation: move 50s linear infinite;
+    }
+
+    .blob:nth-child(1) {
+      top: -50px;
+      left: -50px;
+    }
+
+    .blob:nth-child(2) {
+      bottom: -80px;
+      right: -80px;
+    }
+
+    .blob:nth-child(3) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @keyframes move {
+      0% {
+        transform: scale(1) translateY(0);
+      }
+
+      50% {
+        transform: scale(1.2) translateY(-20px);
+      }
+
+      100% {
+        transform: scale(1) translateY(0);
+      }
+    }
+
+    /* now here css code section 8 */
+    .gradient-bg {
+      background: var(--color-1);
+      color: #222222;
+     padding: 40px 0;
+    }
+
+    .btn-outline-light {
+          border: 2px solid #C59A00;
+        color: #C59A00;
+        background-color: #C59A00;
+        font-weight: 500;
+        color: #000;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #C59A00;
+      color: rgb(14, 13, 13)
+    }
+
+    .stats-card {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 1rem;
+      padding: 30px 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      transition: 0.3s ease;
+      color: #222;
+      border: 1px solid rgba(197, 154, 0, 0.3);
+    }
+
+    .stats-card:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .stats-number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #C59A00;
+    }
+
+    .stats-label {
+      font-size: 0.95rem;
+      margin-top: 5px;
+      color: #444;
+    }
+
+    .icon-box {
+      width: 48px;
+      height: 48px;
+      background: #c59a00;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    /* Now here code section 9 */
+    .hover-animate-text:hover .animate-text {
+      animation: slideInOut 2s linear infinite;
+    }
+
+    @keyframes slideInOut {
+      0% {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+
+      25% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+
+      75% {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+    }
+
+    .arrow-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+    
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+    }
+
+    .hover-animate-text:hover .arrow-circle {
+      background: linear-gradient(106deg, #C59A00 4.11%, #C59A00 4.11%);
+    }
+
+    .arrow-circle span {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    #services {
+      scroll-margin-top: 100px;
+      /* Adjust based on navbar height */
+    }
+
+    #gallery {
+      scroll-margin-top: 100px;
+      /* Adjust based on navbar height */
+    }
+
+    #testimonials {
+      scroll-margin-top: 100px;
+      /* Adjust based on navbar height */
+    }
+
+    #about {
+      scroll-margin-top: 100px;
+      /* Adjust based on navbar height */
+    }
+
+    .text-custom-yellow {
+      color: #c59a00;
+      /* You can change to any yellow shade you prefer */
+    }
+
+    .city-card {
+       
+        border-radius: 8px;
+      
+       height: 200px;
+        transition: transform .18s ease, box-shadow .18s ease;
+      }
+      .city-card:hover {
+        transform: translateY(-6px);
+      
+      }
+      .city-img {
+           width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+      }
+      .city-name {
+       font-weight: 700;
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #000;
+      }
+      /* make cards vertically equal height */
+      .card-body-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px; height: auto; }
+       @media (max-width: 576px) {
+      .marquee {
+        animation-duration: 100s;
+      }
+      
+    .city-card {
+     
+       height: 150px;
+       
+      }
+      .card-body-wrapper {
+   
+    padding: 0px;
+    height: auto;
+}
+.btn-outline-light {
+    border: 2px solid #C59A00;
+    color: #C59A00;
+    background-color: #C59A00;
+    color: #000;
+}
+@media (max-width: 576px) {
+    .btn-outline-light {
+        border: 2px solid #C59A00;
+        color: #C59A00;
+        background-color: #C59A00;
+        font-weight: 500;
+        color: #000;
+    }
+}
+
+      .marquee-item {
+        width: 280px;
+      }
+    }
+  /* Now here whatsapp css for */
+ 
+  .whatsapp_float {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;     /* ✅ Right se Left me shift */
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* SPIKE (Churi) Glow Effect */
+  .whatsapp-spike {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: conic-gradient(
+      #25D366 0deg, 
+      #25D366 20deg, 
+      #128C7E 40deg, 
+      #25D366 60deg, 
+      #128C7E 80deg,
+      #25D366 100deg,
+      #128C7E 120deg,
+      #25D366 140deg,
+      #128C7E 160deg,
+      #25D366 180deg,
+      #128C7E 200deg,
+      #25D366 220deg,
+      #128C7E 240deg,
+      #25D366 260deg,
+      #128C7E 280deg,
+      #25D366 300deg,
+      #128C7E 320deg,
+      #25D366 360deg
+    );
+    filter: blur(7px);
+    z-index: -1;
+    animation: spikePulse 2s infinite;
+  }
+
+  @keyframes spikePulse {
+    0% {
+      transform: scale(0.7) rotate(0deg);
+      opacity: 0.8;
+      filter: blur(4px);
+    }
+    50% {
+      transform: scale(1.25) rotate(20deg);
+      opacity: 0.4;
+      filter: blur(10px);
+    }
+    100% {
+      transform: scale(0.7) rotate(0deg);
+      opacity: 0.8;
+      filter: blur(4px);
+    }
+  }
+
+  .whatsapp-icon {
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .whatsapp_float:hover {
+    transform: scale(1.1);
+  }
+
+  .whatsapp_float:hover .whatsapp-icon {
+    transform: rotate(10deg) scale(1.05);
+    filter: drop-shadow(0 0 8px #25D366);
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+
+  @media (max-width:480px) {
+    .whatsapp_float {
+      width: 55px;
+      height: 55px;
+      bottom: 15px;
+      left: 15px;   /* ✅ Mobile me bhi left side */
+    }
+    .whatsapp-spike { width: 55px; height: 55px; }
+    .whatsapp-icon { width: 45px; height: 45px; }
+  }
+  
+
+
+     body {
+      background: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-form {
+      background: #fff;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .form-title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      text-align: center;
+      color: #333;
+    }
+
+    .form-control {
+      border-radius: 10px;
+      border: 1px solid #ddd;
+    }
+
+    .form-label {
+      font-weight: 600;
+      color: #444;
+    }
+
+    .btn-gradient {
+      background: linear-gradient(106deg, #C59A00 4.11%, #F2E8C4 92.13%);
+      color: #000;
+      font-weight: 600;
+      border-radius: 50px;
+      border: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-gradient:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+
+/* Now here css for send.html */
+ 
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff;
+    }
+
+    .contact-section {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+    }
+
+    .contact-left {
+      background-color: #f8f9fa;
+      padding: 60px;
+    }
+
+    .contact-left h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .contact-left h1 strong {
+      font-weight: 400;
+      display: block;
+      font-size: 4.5rem;
+      line-height: 1.2;
+    }
+
+    .contact-left p {
+      font-size: 1.1rem;
+      color: #6c757d;
+      margin-top: 20px;
+    }
+
+    .contact-left h6 {
+      margin-top: 40px;
+      font-weight: 700;
+    }
+
+    .contact-left small {
+      color: #6c757d;
+    }
+
+    .contact-left .contact-phone {
+      color: #ff7300;
+      font-weight: bold;
+    }
+
+    .contact-right {
+      padding: 60px;
+    }
+
+    .form-label {
+      font-weight: 600;
+      color: #495057;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 1px solid #dee2e6;
+      border-radius: 0;
+      padding-left: 0;
+      background-color: transparent;
+    }
+
+    .form-control::placeholder {
+      color: #adb5bd;
+    }
+
+    .btn-custom {
+      background-color: #0c0c14;
+      color: #fff;
+      border-radius: 2rem;
+      padding: 0.6rem 2rem;
+      font-weight: 600;
+    }
+
+    .btn-custom:hover {
+      background-color: #000;
+    }
+
+    @media (max-width: 991px) {
+      .contact-section {
+        flex-direction: column;
+      }
+
+      .contact-left, .contact-right {
+        padding: 40px 20px;
+      }
+
+      .contact-left h1, .contact-left p,
+      .contact-left h6, .contact-left small,
+      .contact-left .contact-phone {
+        text-align: center;
+      }
+    }
+
+    /* Alert animation */
+    #formAlert {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      min-width: 300px;
+    }
+    #closeContact:hover {
+  background-color: #f0f0f0;
+  color: #dc3545;
+}
+
+ 
+
+

@@ -1,0 +1,1761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Boot Crafters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.html"/>
+    
+    <style>
+      body {
+        background: url("images/bg.jpg") no-repeat center center;
+        background-size: cover;
+      }
+      /* .icon-box {
+        background-image: var(
+          --color-1,
+          linear-gradient(106deg, #caa315, #f0bd07)
+        );
+      } */
+      
+      .navbar-brand img {
+        height: 60px;
+        width: auto;
+      }
+
+      .btn-gradient {
+        background: linear-gradient(to right, #2563eb, #9333ea);
+        color: white;
+        border: none;
+        transition: opacity 0.3s ease;
+      }
+
+      .btn-gradient:hover {
+        opacity: 0.9;
+      }
+
+      .text-shadow-lg {
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+      }
+
+      .text-shadow-md {
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+      }
+
+      .hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+.hero-section .carousel-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+      .hero-overlay::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+
+      .left-image-box {
+        height: 470px;
+        background: linear-gradient(to right, #c2d9f0, #e1cff9);
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        margin-left: -80px;
+      }
+
+      .left-image-box img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+       .icon-box {
+        background: linear-gradient(to right, #2563eb, #9333ea);
+        color:#000;
+        padding: 10px;
+        border-radius: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Media Queries */
+      @media (max-width: 991.98px) {
+        .left-image-box {
+          margin-left: 0;
+          height: 300px;
+        }
+
+        .hero-section {
+          height: auto;
+          padding: 80px 0;
+        }
+
+        .navbar-nav {
+          gap: 0;
+        }
+
+        .text-shadow-lg {
+          text-shadow: none;
+        }
+      }
+
+      @media (max-width: 575.98px) {
+        .left-image-box {
+          height: 250px;
+        }
+
+        h1.display-5 {
+          font-size: 2rem;
+        }
+
+        .btn-gradient {
+          padding: 10px 20px;
+        }
+      }
+      /* .icon-box {
+        background-image: var(
+          --color-1,
+          linear-gradient(106deg, #c59a00, #e9b90b)
+        );
+      } */
+     
+      .navbar-nav .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #c59a00, #f5c209; /* Change to your preferred hover color */
+      }
+
+      /* Optional: Add an underline animation */
+      .navbar-nav .nav-link {
+        position: relative;
+        transition: all 0.3s ease;
+        color: #000 !important; /* default link color */
+      }
+
+      .navbar-nav .nav-link:hover {
+        background: linear-gradient(106deg, #c59a00 4.11%, #f7c307 92.13%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent !important;
+      }
+
+      /* Remove any underline animation */
+      .navbar-nav .nav-link::after {
+        content: none;
+      }
+
+      .btn-gradient {
+        background: linear-gradient(106deg, #c59a00 4.11%, #f0bd05 92.13%);
+        color: #000;
+        border: none;
+        transition: opacity 0.3s ease;
+        font-weight: 600;
+      }
+
+      .btn-gradient:hover {
+        opacity: 0.9;
+      }
+      .gradient-text {
+        background: linear-gradient(106deg, #c59a00 4.11%, #f1be05 92.13%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .gradient-bg {
+        background: linear-gradient(106deg, #c59a00 4.11%, #ebc644 92.13%);
+      }
+      .card-img-top-container {
+        height: 256px;
+        overflow: hidden;
+      }
+      .card-img-top {
+        transition: transform 0.7s ease;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .card:hover .card-img-top {
+        transform: scale(1.1);
+      }
+      .img-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 60%;
+        background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+      }
+      .section-bg {
+        background: linear-gradient(to bottom, white, #f9fafb);
+      }
+      html {
+  scroll-behavior: smooth;
+}
+
+
+      /* 4th section css */
+
+      body {
+        background-color: #7da8c9;
+      }
+
+      /* Section Heading */
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background: linear-gradient(106deg, #c59a00 4.11%, #c59a00 4.11%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .sub-title {
+        color: #666;
+        font-size: 1.1rem;
+      }
+
+      /* Project Card */
+      .project-card {
+        width: 420px;
+        height: 320px;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+        margin: auto;
+        position: relative;
+        background-color: #fff;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      /* Project Image */
+      .project-img {
+        border-radius: 16px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease, filter 0.4s ease;
+      }
+
+      /* Hover Effect */
+      .project-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-card:hover .project-img {
+        transform: scale(1.02);
+        filter: brightness(0.9);
+      }
+
+      /* Section Padding */
+      .project-section {
+        padding: 3px 0;
+      }
+
+      /* View Gallery Button */
+      .btn-view-gallery {
+        margin-top: 30px;
+        background: linear-gradient(106deg, #c59a00 4.11%, #c59a00 4.11%);
+        border: none;
+        color: #000;
+        font-weight: 600;
+        padding: 12px 30px;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn-view-gallery:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .project-card {
+          width: 100%;
+          height: auto;
+        }
+
+        .project-img {
+          height: auto;
+        }
+      }
+
+      /* === Sector 5: Impact Gradient and Blobs === */
+
+      /* Gradient Text Update */
+      .gradient-text {
+        background: linear-gradient(106deg, #c59a00 4.11%, #e4c34d 92.13%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Blob background using yellow/golden tones */
+      .bg-blobs {
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(to bottom right, #fff9e6, #fcf7e3);
+        overflow: hidden;
+      }
+
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(100px);
+        mix-blend-mode: multiply;
+        opacity: 0.25;
+        animation: blob 20s infinite;
+      }
+
+      .blob:nth-child(1) {
+        width: 400px;
+        height: 400px;
+        background: #ffde7a; /* golden-yellow */
+        top: -80px;
+        left: -80px;
+      }
+
+      .blob:nth-child(2) {
+        width: 400px;
+        height: 400px;
+        background: #ffde7a; /* pale yellow */
+        top: -100px;
+        right: -80px;
+        animation-delay: 2s;
+      }
+
+      .blob:nth-child(3) {
+        width: 400px;
+        height: 400px;
+        background: #ffde7a; /* soft yellow */
+        bottom: -80px;
+        left: 40%;
+        animation-delay: 4s;
+      }
+
+      @keyframes blob {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+
+      /* Now Here CSS 5th section */
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        background: linear-gradient(to right, #c59a00, #c59a00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .step-card:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        transform: translateY(-5px);
+      }
+      .icon-circle {
+        background: linear-gradient(to right, #c59a00, #c59a00);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        padding: 1rem;
+        transition: transform 0.3s;
+      }
+      .step-card:hover .icon-circle {
+        transform: scale(1.1);
+      }
+      .step-number {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        background: linear-gradient(to right, #c59a00, #c59a00);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 0.9rem;
+        color: #fff;
+      }
+
+      /* Now here coding 6th section */
+
+      :root {
+        --color-1: linear-gradient(106deg, #c59a00 4.11%, #c59a00 4.11%,);
+      }
+
+      .brand-logo {
+        width: 120px;
+        height: auto;
+        max-height: 60px;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        z-index: 1;
+      }
+
+      .brand-card {
+        width: 180px;
+        height: 100px;
+        position: relative;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        background-color: #fff;
+        overflow: hidden;
+        flex-shrink: 0;
+      }
+
+      .brand-card:hover .brand-logo {
+        transform: scale(1.1);
+        filter: grayscale(0%);
+      }
+
+      .brand-card:hover::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 1rem;
+        background: var(--color-1); /* Using your golden gradient */
+        opacity: 0.3;
+        z-index: 0;
+      }
+      .scroll-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+      .scroll-container {
+        display: flex;
+        gap: 3rem;
+        animation: marquee 30s linear infinite;
+        will-change: transform;
+      }
+      .marquee-duplicate {
+        display: flex;
+        gap: 3rem;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+      .gradient-overlay-left,
+      .gradient-overlay-right {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100px;
+        z-index: 5;
+        pointer-events: none;
+      }
+
+      .gradient-overlay-left {
+        left: 0;
+        background: linear-gradient(to right, #fff, transparent);
+      }
+
+      .gradient-overlay-right {
+        right: 0;
+        background: linear-gradient(to left, #fff, transparent);
+      }
+      /* 7th css */
+
+      /* Now here css secton 7 */
+
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .gradient-text {
+        background: linear-gradient(106deg, #c59a00 4.11%, #c59a00 4.11%,);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        
+      }
+
+      .marquee-container {
+        overflow: hidden;
+        position: relative;
+      }
+
+      .marquee {
+        display: flex;
+        gap: 1.5rem;
+        animation: scrollMarquee 60s linear infinite;
+        width: max-content;
+      }
+
+      @keyframes scrollMarquee {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-50%);
+        }
+      }
+
+      .marquee-item {
+        flex: 0 0 auto;
+        width: 320px;
+      }
+
+      .card {
+        background: #fff;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.05);
+        text-align: left;
+      }
+
+      .star-rating i {
+        color: #ffc107; /* Bootstrap warning/yellow */
+      }
+
+      @media (max-width: 576px) {
+        .marquee {
+          animation-duration: 100s;
+        }
+
+        .marquee-item {
+          width: 280px;
+        }
+      }
+        .gradient-text {
+      background: linear-gradient(106deg, #C59A00 4.11%, #c59a00 4.11%,);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    .bg-blobs {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .blob {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, #c59a00 0%, #c59a00 0%);
+      opacity: 0.4;
+      border-radius: 50%;
+      animation: move 50s linear infinite;
+    }
+
+    .blob:nth-child(1) { top: -50px; left: -50px; }
+    .blob:nth-child(2) { bottom: -80px; right: -80px; }
+    .blob:nth-child(3) { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+    @keyframes move {
+      0% { transform: scale(1) translateY(0); }
+      50% { transform: scale(1.2) translateY(-20px); }
+      100% { transform: scale(1) translateY(0); }
+    }
+
+    /* now here css code section 8 */
+    .gradient-bg {
+  background: var(--color-1);
+  color: #222222;
+  padding: 60px 0;
+}
+
+.btn-outline-light {
+  border: 2px solid #C59A00;
+  color: #C59A00;
+}
+
+.btn-outline-light:hover {
+  background-color: #C59A00;
+  color: rgb(14, 13, 13)
+}
+
+.stats-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  padding: 30px 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+  color: #222;
+  border: 1px solid rgba(197, 154, 0, 0.3);
+}
+
+.stats-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.stats-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #C59A00;
+}
+
+.stats-label {
+  font-size: 0.95rem;
+  margin-top: 5px;
+  color: #444;
+}
+
+.icon-box {
+  width: 48px;
+  height: 48px;
+  background: #c59a00;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Now here code section 9 */
+  .hover-animate-text:hover .animate-text {
+    animation: slideInOut 2s linear infinite;
+  }
+
+  @keyframes slideInOut {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    25% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    75% {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  .arrow-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+
+  .hover-animate-text:hover .arrow-circle {
+    background: linear-gradient(106deg, #C59A00 4.11%, #C59A00 4.11%);
+  }
+
+  .arrow-circle span {
+    color: white;
+    font-size: 1.5rem;
+  }
+   #services {
+  scroll-margin-top: 100px; /* Adjust based on navbar height */
+}
+#gallery {
+  scroll-margin-top: 100px; /* Adjust based on navbar height */
+}
+#testimonials {
+  scroll-margin-top: 100px; /* Adjust based on navbar height */
+}
+#about {
+  scroll-margin-top: 100px; /* Adjust based on navbar height */
+}
+.text-custom-yellow {
+  color: #c59a00; /* You can change to any yellow shade you prefer */
+}
+
+/* Map */
+
+ .map-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+    </style>
+  </head>
+  <body class="text-white">
+    <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top bg-white shadow-sm px-3 px-lg-5"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="/images/logo.svg" alt="Logo" loading="lazy"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMain"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" href="#services">Services</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" href="#gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" href="#testimonials"
+                >Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold text-dark" href="login.html">Contact</a>
+            </li>
+          </ul>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="d-none d-lg-block">
+            <a
+              href="#contact"
+              class="btn btn-gradient rounded-pill px-4 py-2 fw-semibold shadow-sm"
+              >Send a message</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO -->
+    <section id="home" class="hero-section position-relative">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/back-img.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Hero 1">
+      </div>
+      <div class="carousel-item">
+        <img src="images/back-img1.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Hero 2">
+      </div>
+      <div class="carousel-item">
+        <img src="images/back-img2.jpg" class="d-block w-100 vh-100 object-fit-cover" alt="Hero 3">
+      </div>
+    </div>
+
+    <!-- Optional Controls -->
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button> -->
+  </div>
+
+  <!-- Hero Content (Overlay) -->
+  <div class="position-absolute top-50 start-50 translate-middle text-white text-center z-1">
+    <h2 class="display-4 fw-bold">Transform Your Exhibition Presence</h2>
+    <p class="lead">Create stunning exhibition stands that leave a lasting impression</p>
+    <a href="#contact" class="btn btn-outline-light mt-3">Get in Touch</a>
+  </div>
+</section>
+
+    <!-- SECTION: IMAGE + CONTENT -->
+   <section class="py-1 py-md-5 bg-light text-dark">
+
+      <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Left Image -->
+      <div class="col-lg-6">
+        <div class="left-image-box">
+          <img src="images/sec-img.jpg" alt="Exhibition Stand Design" class="img-fluid" />
+        </div>
+      </div>
+          <!-- Right Content -->
+          <div class="col-lg-6">
+            <h2 class="h2 fw-bold text-primary mb-2">
+              Crafting Extraordinary Exhibition Experiences
+            </h2>
+            <p class="text-muted mb-4">
+              Boot Crafters is a leading exhibition stand design & construction
+              company. With over 2 years of experience, we create captivating
+              designs that transform your brand presence and boost visitor
+              engagement at international exhibitions. Our innovative approach
+              combines creativity with functionality, ensuring each stand tells
+              your brand's unique story. We've successfully delivered more than
+              100 projects across various industries, making us your trusted
+              partner for exhibition excellence.
+            </p>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <!-- 1 -->
+              <div class="d-flex align-items-start gap-3">
+                <div class="icon-box">
+                  <!-- Earth -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-earth"
+                  >
+                    <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path>
+                    <path
+                      d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"
+                    ></path>
+                    <path
+                      d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"
+                    ></path>
+                    <circle cx="12" cy="12" r="10"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Global Reach</h6>
+                  <p class="mb-0 text-muted small">
+                    Operating in 25+ countries worldwide
+                  </p>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="d-flex align-items-start gap-3">
+                <div class="icon-box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users-round">
+                    <path d="M18 21a8 8 0 0 0-16 0"></path>
+                    <circle cx="10" cy="8" r="5"></circle>
+                    <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Expert Team</h6>
+                  <p class="mb-0 text-muted small">
+                    Skilled professionals at your service
+                  </p>
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="d-flex align-items-start gap-3">
+                <div class="icon-box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-target"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <circle cx="12" cy="12" r="6"></circle>
+                    <circle cx="12" cy="12" r="2"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Custom Solutions</h6>
+                  <p class="mb-0 text-muted small"> Tailored designs for your brand</p>
+                </div>
+              </div>
+
+              <!-- 4 -->
+              <div class="d-flex align-items-start gap-3">
+                <div class="icon-box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-award">
+                    <path
+                      d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                    <circle cx="12" cy="8" r="6"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h6 class="fw-semibold mb-1">Award Winning</h6>
+                  <p class="mb-0 text-muted small">Recognized for innovation</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <a href="#about" class="btn btn-gradient px-4 py-2 rounded"
+                >Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Now here code for 3rd  -->
+
+   
+      <section id="services" class="py-2 section-bg">
+  <!-- Your content here -->
+      <div class="container py-2">
+        <div class="text-center mb-5">
+          <h3 class="display-5 fw-bold gradient-text bg-yellow mb-3">Our Services</h3> 
+          <p class="text-muted mx-auto" style="max-width: 600px">
+            We offer comprehensive exhibition solutions to help you create
+            memorable brand experiences
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Service 1 -->
+          <div class="col-md-6 col-lg-4 col-log-12">
+            <div
+              class="card h-100 border-0 shadow-sm hover-shadow-lg transition-all duration-300"
+            >
+              <div class="card-img-top-container position-relative">
+                <img
+                  src="https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566201534_IMG_5583.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DYxH4bd6wqgKKtrAkfin%252B2Upilaa7XaQbdiZlEb3UL5eDBruLVbwUTy%252FSmAjuIs36wILTi4zyR6BFPB1ygp5KACfmGklB0rPf9%252FDq2g4iQADRcvmT0aNHDQnxgnpSmUCSptBabwSzKaiTvamgtZt7Yu9z27TMGMEX53gLU5eLWmcn1RqP%252FsyDqZJG4D0eelB9T3Q0S8PT4m3meRNkWcNpLvSfqDQCKtp810OmTWSppP%252F857jGZyXzgaa%252FeoQ%252Flniqu85YafW58yQoJq2Yp2sSHUMBBD4O8yYBkNshfpGpHlbpJP9V1y%252FW7jV70Smm3oDDPccKAYSbwtfB3BP0%252FY%252BQmg%253D%253D&w=640&q=75"
+                  alt="Country Pavilion"
+                  class="card-img-top"
+                />
+                <div class="img-overlay"></div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3">Country Pavilion</h3>
+                <p class="text-muted mb-4 small">
+                  Country Pavilion is an ultimate way to increase your brand
+                  awareness and target ...
+                </p>
+                <a
+                  href="/services/WXZVC3qaCh84E3XVg9Kj"
+                  class="text-decoration-none text-primary small fw-medium"
+                >
+                  Learn More <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card h-100 border-0 shadow-sm hover-shadow-lg transition-all duration-300"
+            >
+              <div class="card-img-top-container position-relative">
+                <img
+                  src="https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566278093_IMG_5587.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DFzN%252BjRf5UYBKPFGVTB158QCUJpAkfIqnl15G1tcCTdRCUko3wibquXb860yVylJOdjv54ZFCFCqmBYe9Ib1Pm1TGewoc6kJ2TRc%252B%252Bl9LQ4Sj4QQz0ApVVEAgR68JbTrr%252BDWEcwsthFIb%252FN42QPtZL%252FqitpXjnF8GPsRZXkvEcl3CXLDe9wF0mX3K9HRxp%252FdIq%252Flok5eGM0dOaCInbRpgTnpmCsvPjfWyuCyxb62GZ36Y8EaRftJLiixcO6BDpwIJCKJh0JitwKNIyaeN0pFJB1em4kJjO9jdKQKe9FLLMtcJ7LBhB%252F9rQe%252BUjuk8gr1atrhMxGaMJyllV3zuNF6Ljw%253D%253D&w=640&q=75"
+                  alt="Mezzanine Stands"
+                  class="card-img-top"
+                />
+                <div class="img-overlay"></div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3">
+                  Mezzanine Stands for Substantial driven space
+                </h3>
+                <p class="text-muted mb-4 small">
+                  A mezzanine booth also called a Double Decker or two-story
+                  stand is the best pos...
+                </p>
+                <a
+                  href="/services/97jgwztJm7VSZgMwQeKK"
+                  class="text-decoration-none text-primary small fw-medium"
+                >
+                  Learn More <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div
+              class="card h-100 border-0 shadow-sm hover-shadow-lg transition-all duration-300"
+            >
+              <div class="card-img-top-container position-relative">
+                <img
+                  src="https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566109560_IMG_5581.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DKBXkiK0Hf4X0h5MUQPigx3Sa7A0qtFn2JwaKalPTEdy%252FmhzuzehsE2ROhKZR7FYXIzTm3TapEOKlidpgWvgfjGg3TVf6OsiHUlhzg7AHseR16vDtf3lVIcmWbC8XQTcG8MF7QhDwpC3s8ArkZZOzvooGfU6us1VHHSLwXsWRV9UqehQOVaS0%252BPQOyOPGbIMquDudUen7uk943hJjfFjw2Cf9OLHyyL0maQc62RoNSLOFeskP0U3PLOsBaWPpEZv%252BONPv7vNBGwg%252BAx8uQPbgUn6ehELiodNhhDSytA%252F29dKRXsH2JOUNotyfDPOluWN1dK%252BHiAwnRIi9%252BOnhL0eCBA%253D%253D&w=640&q=75"
+                  alt="Custom exhibition stands"
+                  class="card-img-top"
+                />
+                <div class="img-overlay"></div>
+              </div>
+              <div class="card-body">
+                <h3 class="h5 fw-semibold mb-3">
+                  Custom exhibition stands to uplift your business presence
+                </h3>
+                <p class="text-muted mb-4 small">
+                  Customized stands are excellent for people looking for
+                  eye-catching exhibition s...
+                </p>
+                <a
+                  href="/services/EbeLfl5GRjPo0a5GNhio"
+                  class="text-decoration-none text-primary small fw-medium"
+                >
+                  Learn More <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a
+            href="//service.html"
+            class="text-white px-4 py-2 rounded-pill"
+            style="background-color: #C59A00;"
+          >
+            View All Services <i class="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Now here code 4th sector -->
+
+     
+        <section id="gallery" class="project-section text-center bg-light py-3 mt-3">
+
+      <div class="container">
+        <h3 class="section-title display-5 mb-2">Recent Projects</h3>
+        <p class="text-muted mb-5">
+          Showcasing our latest exhibition stand designs and creations.
+        </p>
+
+        <div class="row g-4 justify-content-center" id="projectGallery">
+          <!-- 12 Example Images: First 9 will be visible -->
+          <!-- Replace these URLs with your real image URLs -->
+          <script>
+            const imageUrls = [
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566278093_IMG_5587.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DFzN%252BjRf5UYBKPFGVTB158QCUJpAkfIqnl15G1tcCTdRCUko3wibquXb860yVylJOdjv54ZFCFCqmBYe9Ib1Pm1TGewoc6kJ2TRc%252B%252Bl9LQ4Sj4QQz0ApVVEAgR68JbTrr%252BDWEcwsthFIb%252FN42QPtZL%252FqitpXjnF8GPsRZXkvEcl3CXLDe9wF0mX3K9HRxp%252FdIq%252Flok5eGM0dOaCInbRpgTnpmCsvPjfWyuCyxb62GZ36Y8EaRftJLiixcO6BDpwIJCKJh0JitwKNIyaeN0pFJB1em4kJjO9jdKQKe9FLLMtcJ7LBhB%252F9rQe%252BUjuk8gr1atrhMxGaMJyllV3zuNF6Ljw%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566265805_IMG_5586.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DNBIRhQujdaO43bcJmI9YukmvevdeA29XkezjPz%252FwjbJ8K5CDmL6e88NXyYYNHSydv4N6yXng6enaQlahtUFwCUbiZatL0Smer8CNqQStx12f9IsL9Q9kVxSJpAzjkGTN0Vnv701ATTgoDWeQXbnBCXWtnEYeLE74Jx8xvSau8aJqNoWqnyM%252FW0A%252FhLwpr8TiwjrTD%252BNmhWTIpNpN9U6KXke76REAnqtEzv6cFs%252BQdipoYX3Nr4jcVj%252FkQH%252Fo2NBQ%252BRYXN70vEGpVe98g6t3LGyC%252FrA9LsY7l107%252F%252BBbPg8lHkVTgLeo1h47V2yGFymYolywfn4n27csIKzZEXR07vA%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566231040_IMG_5586.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DZHup1jKGNGIp%252BdgLUcqUtOmcLfrGiRIEEx2mCF5ysOXiGA0vWTyZ9eSVQjGORsC8KgiWDxi9GIRHMB4gDhr1nZ2AQ3UuSnUbFYaGUSKYg%252BNPgt2rPP81jzvd753ZZSCeEaw%252FHvE74IQjNviTUJO28YGYyPaeB4aw47WNmVMQ4CTbkkoKAmyVWFjmeIwne396ghbUK7gAD0RI%252F5Ay4pyZeR3KcSGULEf0hRq7htRggYF8Kgx8b0o%252BdxH2hHnss1S3sTyu7PqbLmzIPHNT%252BHBWih58m9TTvy1lhXsHL6BcWAg0K5d4cwJDS8bfOvzJg7iDm2mlasDIoPmxDmyrNQGwCw%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566222115_IMG_5585.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DqunvZ37sfBJcl3QcRsW8o8czOSBr42qGHVy5u0SFyMZBI38scn6MAjARa3NtpjZQjbuDyNyicha9lt3XutUK12JtSLFPaEzhWsqukVGiZ8PLusBpORLTvgt%252FH67tu6DOzjEnfNl59I37xxuMfWojM%252BMJyr9DyjdvHggHWSs%252BdHNhoBaSiKztG34YD7czI37P0cGmiHPru7gMUrUb%252FD7ZS7Isa6Hflq7ox%252F95Nqt1%252FDRbT5LYmf6CobNZAlM%252Bs7WR0ECF7dshWw53we3XAKkw1GESYcfXGO2un6%252FsTReSh%252BHCEkao0SRCM2nOA5FmQJTc8llbhCD6sLRYqhEz6dmYwQ%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566211425_IMG_5584.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DUmq1oB1ijxeQT0C%252FAdKiz5ngkPR3NPJMCtZ4iaUiOgjJ6zIpTV77w62iUfXZvHxX4h4%252Fk%252BdgshyNxzf5sx3vpoJVr0ihZaA%252FNOjvZbYAShia0FKMDTxFWxefruM2ebGzo9FjzF6PRRDcSgjIVgQevQESDbjN3JwsNbUjrXxe0QosloMMcL81n%252BgwOwP5u8aX3ZX3gqBLEy5ViEdT2m%252FM98AIuEHgWR8uTAw8pdKid9356yg7tMvd9o8I61YYOfr5%252BOMuQzHS17dFWuQ9S8x%252FnKfVxHcUZ%252BvuwyDyfqHPRtBMom2Anf6CG7IFkpHEdk7xCratDv%252BXHFvnMbZdrAiP%252Bw%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566201534_IMG_5583.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DYxH4bd6wqgKKtrAkfin%252B2Upilaa7XaQbdiZlEb3UL5eDBruLVbwUTy%252FSmAjuIs36wILTi4zyR6BFPB1ygp5KACfmGklB0rPf9%252FDq2g4iQADRcvmT0aNHDQnxgnpSmUCSptBabwSzKaiTvamgtZt7Yu9z27TMGMEX53gLU5eLWmcn1RqP%252FsyDqZJG4D0eelB9T3Q0S8PT4m3meRNkWcNpLvSfqDQCKtp810OmTWSppP%252F857jGZyXzgaa%252FeoQ%252Flniqu85YafW58yQoJq2Yp2sSHUMBBD4O8yYBkNshfpGpHlbpJP9V1y%252FW7jV70Smm3oDDPccKAYSbwtfB3BP0%252FY%252BQmg%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566120709_IMG_5582.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DQjipUBpx9kK7e5Y3gkqpwD4W5FeBEISRbIjrjwX2%252FYKU8V8Q1JLgT%252FoFTRMe0mghQNUW2E6dEc%252BbQAUA54Cq%252Fw1cTPNQxZ56lu1PHMH10ko0AwxUjJ7NeSEOkhZKjbcmxOLO6qRiBHQeWh5onzvukiULaIBh%252BctAM%252B6JW%252B1z0V06JL33AgvkjRDCKhRyEXLFbHkdyKOMq%252BMb9XTdLsULM7scl1VWoOd2JiznK5RYX7T6RcBXTJoBT1xs0eb09G7X%252F%252FkV8ohIMjA4IP3UpE%252Fi4UcFUu7dvrow0M6dkBC42DZdo9XVgWCxoze09DlRzd1O9p1d%252F88BHtvRjwJ0%252FiLg0w%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566109560_IMG_5581.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DKBXkiK0Hf4X0h5MUQPigx3Sa7A0qtFn2JwaKalPTEdy%252FmhzuzehsE2ROhKZR7FYXIzTm3TapEOKlidpgWvgfjGg3TVf6OsiHUlhzg7AHseR16vDtf3lVIcmWbC8XQTcG8MF7QhDwpC3s8ArkZZOzvooGfU6us1VHHSLwXsWRV9UqehQOVaS0%252BPQOyOPGbIMquDudUen7uk943hJjfFjw2Cf9OLHyyL0maQc62RoNSLOFeskP0U3PLOsBaWPpEZv%252BONPv7vNBGwg%252BAx8uQPbgUn6ehELiodNhhDSytA%252F29dKRXsH2JOUNotyfDPOluWN1dK%252BHiAwnRIi9%252BOnhL0eCBA%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566097219_IMG_5580.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DKcNGBHI656WMiNyluCfdgCb9Vt%252BV6EZC6UoiyF1BH0fsUDlRQ29%252FhA4fgtXTTOAfWBPC36xhskuG0u%252BQkL0Ub0eBZGqI%252Byfn0Ndri93FiZweJZAIfz2r9dqsnzgDzASeTV09NbVwlhUiwzMvNAkd3b4tl6aMXt%252BxNFc8hm2xwpzHV3HF4WhKaTeUSFg4VYzutrHZb%252Bcip62m320TEfFciA%252Fwr4629S6KhWCALFFNUGwvLlXRvqaHwtm3l1l8oVrppBtqZGHcKkGSH6OASeDlYljnjOybIXV4zR44U9NBfjRQqyvvtTSlHmkFGQE5yJ6piIDxm%252FN0jIp%252BRuSEOezUGQ%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566278093_IMG_5587.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DFzN%252BjRf5UYBKPFGVTB158QCUJpAkfIqnl15G1tcCTdRCUko3wibquXb860yVylJOdjv54ZFCFCqmBYe9Ib1Pm1TGewoc6kJ2TRc%252B%252Bl9LQ4Sj4QQz0ApVVEAgR68JbTrr%252BDWEcwsthFIb%252FN42QPtZL%252FqitpXjnF8GPsRZXkvEcl3CXLDe9wF0mX3K9HRxp%252FdIq%252Flok5eGM0dOaCInbRpgTnpmCsvPjfWyuCyxb62GZ36Y8EaRftJLiixcO6BDpwIJCKJh0JitwKNIyaeN0pFJB1em4kJjO9jdKQKe9FLLMtcJ7LBhB%252F9rQe%252BUjuk8gr1atrhMxGaMJyllV3zuNF6Ljw%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566211425_IMG_5584.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DUmq1oB1ijxeQT0C%252FAdKiz5ngkPR3NPJMCtZ4iaUiOgjJ6zIpTV77w62iUfXZvHxX4h4%252Fk%252BdgshyNxzf5sx3vpoJVr0ihZaA%252FNOjvZbYAShia0FKMDTxFWxefruM2ebGzo9FjzF6PRRDcSgjIVgQevQESDbjN3JwsNbUjrXxe0QosloMMcL81n%252BgwOwP5u8aX3ZX3gqBLEy5ViEdT2m%252FM98AIuEHgWR8uTAw8pdKid9356yg7tMvd9o8I61YYOfr5%252BOMuQzHS17dFWuQ9S8x%252FnKfVxHcUZ%252BvuwyDyfqHPRtBMom2Anf6CG7IFkpHEdk7xCratDv%252BXHFvnMbZdrAiP%252Bw%253D%253D&w=640&q=75",
+              "https://technovaexhibits.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Ftechnova-c5022.firebasestorage.app%2Fstall-craft%2F1745566201534_IMG_5583.PNG%3FGoogleAccessId%3Dfirebase-adminsdk-fbsvc%2540technova-c5022.iam.gserviceaccount.com%26Expires%3D16447017600%26Signature%3DYxH4bd6wqgKKtrAkfin%252B2Upilaa7XaQbdiZlEb3UL5eDBruLVbwUTy%252FSmAjuIs36wILTi4zyR6BFPB1ygp5KACfmGklB0rPf9%252FDq2g4iQADRcvmT0aNHDQnxgnpSmUCSptBabwSzKaiTvamgtZt7Yu9z27TMGMEX53gLU5eLWmcn1RqP%252FsyDqZJG4D0eelB9T3Q0S8PT4m3meRNkWcNpLvSfqDQCKtp810OmTWSppP%252F857jGZyXzgaa%252FeoQ%252Flniqu85YafW58yQoJq2Yp2sSHUMBBD4O8yYBkNshfpGpHlbpJP9V1y%252FW7jV70Smm3oDDPccKAYSbwtfB3BP0%252FY%252BQmg%253D%253D&w=640&q=75",
+            ];
+
+            imageUrls.forEach((url, index) => {
+              document.write(`
+            <div class="col-md-6 col-lg-4 ${
+              index >= 9 ? "d-none extra-img" : ""
+            }">
+              <img src="${url}" alt="Project ${
+                index + 1
+              }" class="project-img shadow-sm">
+            </div>
+          `);
+            });
+          </script>
+        </div>
+
+        <button class="btn btn-primary btn-view-gallery" id="viewGalleryBtn">
+          
+          View Gallery
+        </button>
+      </div>
+    </section>
+
+    <section class="position-relative py-5 bg-light overflow-hidden">
+  <!-- Blurred Gradient Blobs -->
+  <div class="bg-blobs">
+    <div class="blob"></div>
+    <div class="blob"></div>
+    <div class="blob"></div>
+  </div>
+
+  <div class="container text-center position-relative">
+    <h3 class="gradient-text fw-bold display-6 mb-2">
+      Our Impact in Numbers
+    </h3>
+    <p class="text-muted mb-5">
+      Delivering excellence across global exhibitions and events
+    </p>
+
+    <!-- Stats Cards -->
+    <div class="row g-4">
+      <div class="col-6 col-md-3">
+        <div class="bg-white rounded-4 p-4 shadow-sm text-center h-100">
+          <h3 class="gradient-text fw-bold display-6 mb-2 counter" data-target="1000">1</h3>
+
+
+          <p class="text-muted small">Exhibitions Designed</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="bg-white rounded-4 p-4 shadow-sm text-center h-100">
+          <h3 class="gradient-text fw-bold display-6 mb-2 counter" data-target="60">1</h3>
+          <p class="text-muted small">Global Markets</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="bg-white rounded-4 p-4 shadow-sm text-center h-100">
+          <h3 class="gradient-text fw-bold display-6 mb-2 counter" data-target="99">1</h3>
+          <p class="text-muted small">Client Retention</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="bg-white rounded-4 p-4 shadow-sm text-center h-100">
+          <h3 class="gradient-text fw-bold display-6 mb-2 counter" data-target="20">1</h3>
+          <p class="text-muted small">Years of Excellence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- /Now Here code is 5th section -->
+    <section class="py-2 bg-light">
+      <div class="container">
+        <div class="text-center mb-6">
+          <h3 class="section-title mb-3">How We Work</h3>
+          <p class="text-muted">
+            Simple steps to create your perfect exhibition stand
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- Step 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="position-relative bg-white rounded-4 p-4 text-center step-card h-100"
+            >
+              <div class="icon-circle mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-lightbulb"
+                >
+                  <path
+                    d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"
+                  />
+                  <path d="M9 18h6" />
+                  <path d="M10 22h4" />
+                </svg>
+              </div>
+              <h5 class="fw-semibold mb-2">Consultation</h5>
+              <p class="text-muted small">
+                Understanding your brand vision and exhibition goals
+              </p>
+              <div class="step-number">1</div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="position-relative bg-white rounded-4 p-4 text-center step-card h-100"
+            >
+              <div class="icon-circle mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-pen-tool"
+                >
+                  <path
+                    d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"
+                  />
+                  <path
+                    d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"
+                  />
+                  <path d="m2.3 2.3 7.286 7.286" />
+                  <circle cx="11" cy="11" r="2" />
+                </svg>
+              </div>
+              <h5 class="fw-semibold mb-2">Design</h5>
+              <p class="text-muted small">
+                Creating unique concepts that align with your identity
+              </p>
+              <div class="step-number">2</div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="position-relative bg-white rounded-4 p-4 text-center step-card h-100"
+            >
+              <div class="icon-circle mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-panels-top-left"
+                >
+                  <rect width="18" height="18" x="3" y="3" rx="2" />
+                  <path d="M3 9h18" />
+                  <path d="M9 21V9" />
+                </svg>
+              </div>
+              <h5 class="fw-semibold mb-2">Production</h5>
+              <p class="text-muted small">
+                Building your stand with precision and quality
+              </p>
+              <div class="step-number">3</div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div
+              class="position-relative bg-white rounded-4 p-4 text-center step-card h-100"
+            >
+              <div class="icon-circle mb-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-settings"
+                >
+                  <path
+                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"
+                  />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </div>
+              <h5 class="fw-semibold mb-2">Installation</h5>
+              <p class="text-muted small">
+                Professional setup and event support
+              </p>
+              <div class="step-number">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="testimonials" class="py-py-2 bg-white">
+
+      project-section text-center bg-light
+      <div class="container text-center mb-5">
+        <h3
+          class="fw-bold mb-2"
+          style="
+            background: linear-gradient(to right, #c59a00, #f0d164);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        >
+          Trusted by Global Brands
+        </h3>
+        <p class="text-muted">
+          We've helped leading companies create impactful exhibition experiences
+          worldwide
+        </p>
+      </div>
+
+      <div class="position-relative scroll-wrapper py-3">
+        <div class="gradient-overlay-left"></div>
+        <div class="gradient-overlay-right"></div>
+
+        <div class="scroll-container">
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+              alt="Microsoft"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+              alt="Google"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+              alt="Apple"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+              alt="Amazon"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg"
+              alt="Samsung"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg"
+              alt="IBM"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg"
+              alt="Oracle"
+              class="brand-logo"
+            />
+          </div>
+          <!-- Repeat logos to complete marquee loop -->
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+              alt="Microsoft"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+              alt="Google"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+              alt="Apple"
+              class="brand-logo"
+            />
+          </div>
+          <div class="brand-card">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+              alt="Amazon"
+              class="brand-logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="scroll-wrapper">
+        <div class="gradient-overlay-left"></div>
+        <div class="gradient-overlay-right"></div>
+
+        <div class="scroll-container">
+          <div class="marquee-duplicate">
+            <!-- Brand Cards x N -->
+          </div>
+          <div class="marquee-duplicate">
+            <!-- Same Brand Cards again for seamless scroll -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7 -->
+
+    <section class="bg-white">
+      <div class="container text-center mb-0">
+        <div class="marquee-container py-5">
+          <h3 class="display-6 fw-bold gradient-text mb-3">
+            What Our Clients Say
+          </h3>
+          <p class="text-muted mx-auto" style="max-width: 700px">
+            Hear from our satisfied clients about their experience working with
+            us
+          </p>
+
+          <!-- Marquee Track -->
+          <div class="marquee mt-4">
+            <!-- START Testimonial Cards -->
+            <!-- Each card = .marquee-item -->
+
+            <!-- Copy-paste your testimonial cards below -->
+
+            <div class="marquee-item">
+              <div class="card border-0 shadow rounded-4 p-4">
+                <div class="card-body">
+                  <div class="star-rating mb-4 d-flex gap-1">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="text-secondary">
+                    Technova created an outstanding exhibition stall for us at
+                    Auto Expo. The execution was flawless, and it attracted a
+                    lot of attention from visitors.
+                  </p>
+                  <div class="d-flex align-items-center gap-3 mt-4">
+                    <h4 class="fw-semibold mb-0">Rohit Mehra</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="marquee-item">
+              <div class="card border-0 shadow rounded-4 p-4">
+                <div class="card-body">
+                  <div class="star-rating mb-4 d-flex gap-1">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="text-secondary">
+                    We hired Technova for the India International Trade Fair,
+                    and their design sense was truly impressive. The team was
+                    professional and delivered right on time.
+                  </p>
+                  <div class="d-flex align-items-center gap-3 mt-4">
+                    <h4 class="fw-semibold mb-0">Priya Nair</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="marquee-item">
+              <div class="card border-0 shadow rounded-4 p-4">
+                <div class="card-body">
+                  <div class="star-rating mb-4 d-flex gap-1">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="text-secondary">
+                    What Technova delivered was more than just a stall — it was
+                    a full brand experience. We saw a significant increase in
+                    leads during the exhibition.
+                  </p>
+                  <div class="d-flex align-items-center gap-3 mt-4">
+                    <h4 class="fw-semibold mb-0">Arjun Reddy</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="marquee-item">
+              <div class="card border-0 shadow rounded-4 p-4">
+                <div class="card-body">
+                  <div class="star-rating mb-4 d-flex gap-1">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="text-secondary">
+                    The design aesthetics, attention to detail, and timely
+                    delivery were top-notch. Technova helped our FMCG brand
+                    stand out beautifully at the trade show.
+                  </p>
+                  <div class="d-flex align-items-center gap-3 mt-4">
+                    <h4 class="fw-semibold mb-0">Anita Sharma</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="marquee-item">
+              <div class="card border-0 shadow rounded-4 p-4">
+                <div class="card-body">
+                  <div class="star-rating mb-4 d-flex gap-1">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <p class="text-secondary">
+                    At the Vibrant Gujarat Summit, the stall designed by
+                    Technova truly stood out. We had great client interactions
+                    and saw double the usual footfall.
+                  </p>
+                  <div class="d-flex align-items-center gap-3 mt-4">
+                    <h4 class="fw-semibold mb-0">Karan Patel</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- END Testimonial Cards -->
+
+            <!-- (Optional) Duplicate the same items for seamless infinite loop -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Now here code section 8 -->
+      <section class="gradient-bg">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Content -->
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          
+          <h2 class="fw-bold display-5 mb-3">Ready to Create Your Next Exhibition Experience?</h2>
+          <p class="lead mb-4">
+            Let's discuss how we can help you make a lasting impression at your next exhibition.
+            Our team is ready to bring your vision to life.
+          </p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#" class="btn btn-light btn-lg">Get Started →</a>
+            <a href="#" class="btn btn-outline-light btn-lg">View Portfolio</a>
+          </div>
+        </div>
+
+        <!-- Right Stats Cards -->
+        <div class="col-lg-6">
+          <div class="row g-4">
+            <div class="col-6">
+              <div class="stats-card">
+                <div class="stats-number">500+</div>
+                <div class="stats-label">Successful Projects</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stats-card">
+                <div class="stats-number">25+</div>
+                <div class="stats-label">Countries Served</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stats-card">
+                <div class="stats-number">15+</div>
+                <div class="stats-label">Years Experience</div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="stats-card">
+                <div class="stats-number">100%</div>
+                <div class="stats-label">Client Satisfaction</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Now here code section 9 -->
+  <section class="py-2 bg-light">
+  <section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-5 mb-5">
+      <div class="col-lg-4">
+        <h2 class="display-5 fw-bold text-dark">We'd love to</h2>
+        <div class="d-flex align-items-start mb-3">
+          <h2 class="display-5 fw-bold mb-0 text-dark">design</h2>
+          <div class="d-flex align-items-center ms-3">
+            <div class="border-start border-2 border-dark h-100 mx-3"></div>
+            <span class="display-5 fw-bold text-dark">...</span>
+            <div class="arrow-circle ms-3">
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </div>
+        <p class="text-muted">Looking for <strong>collaboration</strong>? Send an email to
+          <a href="mailto:info@technovaexhibits.com" class="text-primary text-decoration-none">boothcrafterspvtltd@gmail.com</a>
+          for enquiries and collaborations.
+        </p>
+      </div>
+
+      <div class="col-lg-4">
+        <h5 class="fw-semibold mb-3 text-custom-yellow">Office</h5>
+        <address class="text-muted">
+          VDS, Office number-102,<br>
+          H. 160 Sector 63 First floor <br>
+          Noida, 201301 UP<br>
+          Email: boothcrafterspvtltd@gmail.com<br>
+          <strong class="text-dark">+91 8979100184</strong>
+        </address>
+
+        <div class="d-flex gap-3 mt-3">
+          <a href="https://www.facebook.com/share/1Bk21Ac1o1/?mibextid=wwXIfr" class="text-dark fs-5" target="_blank">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://wa.me/918979100184" class="text-dark fs-5" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://www.linkedin.com/company/bootcrafers-pvt/posts/?feedView=all" class="text-dark fs-5" target="_blank">
+            <i class="bi bi-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <h5 class="fw-semibold mb-3 text-custom-yellow">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="/" class="text-dark text-decoration-none d-block py-1">Home</a></li>
+          <li><a href="#services" class="text-dark text-decoration-none d-block py-1">Services</a></li>
+          <li><a href="#about" class="text-dark text-decoration-none d-block py-1">About</a></li>
+          <li><a href="#gallery" class="text-dark text-decoration-none d-block py-1">Gallery</a></li>
+          <li><a href="#contact" class="text-dark text-decoration-none d-block py-1">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <section id="map-section" class="py-2 bg-lite">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold text-custom-yellow">Our Location</h2>
+
+    <div class="map-container rounded shadow-sm overflow-hidden">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28014.6253627334!2d77.378067!3d28.6253948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM3JzMxLjQiTiA3N8KwMjInNDEuMCJF!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+    <div class="border-top pt-4 d-flex flex-column flex-lg-row justify-content-between align-items-center">
+      <p class="text-muted mb-2 mb-lg-0">COPYRIGHT 2025 &copy; | Boot Crafters | ALL RIGHTS RESERVED</p>
+      <div class="d-flex gap-3">
+        <a href="privecy.html" class="text-muted text-decoration-none">Privacy Policy</a>
+        <a href="TC.html" class="text-muted text-decoration-none">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <script>
+      const viewBtn = document.getElementById("viewGalleryBtn");
+      viewBtn.addEventListener("click", () => {
+        document
+          .querySelectorAll(".extra-img")
+          .forEach((img) => img.classList.remove("d-none"));
+        viewBtn.style.display = "none";
+      });
+ const counters = document.querySelectorAll('.counter');
+  const speed = 50;
+
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    let count = 1;
+
+    const updateCount = () => {
+      const increment = Math.ceil(target / speed);
+      if (count < target) {
+        count += increment;
+        counter.innerText = count > target ? target : count;
+        requestAnimationFrame(updateCount);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    // Set starting value
+    counter.innerText = 1;
+    updateCount();
+  });
+   function initMap() {
+      const location = { lat: 28.6139, lng: 77.2090 }; // Delhi
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: location,
+      });
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+      });
+    }
+</script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script async defer src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28014.6253627334!2d77.378067!3d28.6253948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM3JzMxLjQiTiA3N8KwMjInNDEuMCJF!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"></script>
+
+    
+  </body>
+</html>

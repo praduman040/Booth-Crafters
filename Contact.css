@@ -1,0 +1,206 @@
+body {
+    padding-top: 70px;
+    background: linear-gradient(180deg, #FFE696 0%, #FFE3BD 100%);
+    color: #000;
+  }
+
+  .btn-gradient {
+    background: linear-gradient(90deg, #f9c10b, #e6c927);
+    color: #fff;
+    border: none;
+  }
+
+  .btn-gradient:hover {
+    background: linear-gradient(90deg, #d4c707, #f9c10b);
+    color: #fff;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #f9c10b !important;
+  }
+
+  .navbar-brand img {
+    height: 40px;
+  }
+
+  .icon-box {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+  }
+
+  .hero-section {
+    position: relative;
+    background: url('/images/back-img1.png') no-repeat center center/cover;
+    min-height: 400px;
+    color: #fff;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(92, 31, 173, 0.45);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .icon-glass {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 0.75rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .icon-glass i {
+    font-size: 1.5rem;
+    color: #fff;
+  }
+
+  .text-custom-yellow {
+    color: #f9c10b;
+  }
+ .city-card {
+       
+        border-radius: 8px;
+      
+       height: 200px;
+        transition: transform .18s ease, box-shadow .18s ease;
+      }
+      .city-card:hover {
+        transform: translateY(-6px);
+      
+      }
+      .city-img {
+           width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+      }
+      .city-name {
+       font-weight: 700;
+    font-size: 1.5rem;
+    margin: 5px 0;
+    color: #000;
+      }
+      /* make cards vertically equal height */
+      .card-body-wrapper { display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 12px; height: auto; }
+  /* ------------------ MEDIA QUERIES ------------------ */
+  @media (max-width: 991px) {
+    .navbar-nav {
+      gap: 1rem !important;
+    }
+
+    .hero-section {
+      min-height: 320px;
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+    }
+
+    .btn-gradient {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+    }
+
+    .icon-box {
+      width: 40px;
+      height: 40px;
+    }
+
+    .icon-box i {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+
+    .hero-content p {
+      padding: 0 1rem;
+    }
+
+    .form-control {
+      font-size: 0.9rem;
+    }
+
+    .btn-gradient,
+    .btn-primary {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 1.6rem;
+    }
+
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+
+    .icon-glass {
+      width: 40px;
+      height: 40px;
+    }
+
+    .icon-glass i {
+      font-size: 1.2rem;
+    }
+
+    .container,
+    .container-fluid {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .form-control {
+      font-size: 0.85rem;
+    }
+
+    .btn-gradient,
+    .btn-primary {
+      font-size: 0.85rem;
+    }
+        .city-card {
+     
+       height: 150px;
+       
+      }
+      .card-body-wrapper {
+   
+    padding: 0px;
+    height: auto;
+}
+
+  }
+
